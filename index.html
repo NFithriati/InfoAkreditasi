@@ -65,7 +65,103 @@ line-height:1.8;
 }
 
 </style>
+.checklist{
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+}
 
+.checklist h2{
+    text-align:center;
+    color:#0B5ED7;
+    font-size:36px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-top:15px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+
+    background:white;
+
+    width:320px;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    color:#0B5ED7;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+background:#20C997;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.btn:hover{
+
+background:#17a589;
+
+}
 </head>
 
 <body>
@@ -92,6 +188,67 @@ Website ini merupakan pusat informasi akreditasi Rumah Sakit AR Bunda Prabumulih
 
 </section>
 
+</body>
+
+</html>
+</section>
+
+<!-- Tambah Section Baru -->
+
+<section>
+
+........
+
+</section>
+<section class="checklist">
+
+    <h2>📋 Checklist Telusur</h2>
+
+    <p class="subtitle">
+        Silakan pilih jabatan yang akan dipersiapkan untuk menghadapi survei akreditasi.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">👔</div>
+
+            <h3>Kepala Bidang</h3>
+
+            <p>Checklist dokumen, fokus pertanyaan surveyor, dan temuan yang sering.</p>
+
+            <a href="kepala-bidang.html" class="btn">Lihat Checklist</a>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🏥</div>
+
+            <h3>Kepala Instalasi / Ruangan</h3>
+
+            <p>Checklist dokumen, fokus pertanyaan surveyor, dan temuan yang sering.</p>
+
+            <a href="kepala-instalasi.html" class="btn">Lihat Checklist</a>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">📁</div>
+
+            <h3>Kepala Unit</h3>
+
+            <p>Checklist dokumen, fokus pertanyaan surveyor, dan temuan yang sering.</p>
+
+            <a href="kepala-unit.html" class="btn">Lihat Checklist</a>
+
+        </div>
+
+    </div>
+
+</section>
 </body>
 
 </html>
