@@ -7,141 +7,65 @@
 <title>Update Akreditasi</title>
 
 <style>
-.about{
+/* ===========================
+   CHECKLIST
+=========================== */
 
-    padding:70px 20px;
-
-    background:white;
-
-}
-
-.about h2{
-
-    text-align:center;
-
-    color:#0B5ED7;
-
-    font-size:36px;
-
-    margin-bottom:30px;
-
-}
-
-.about p{
-
-    max-width:900px;
-
-    margin:auto;
-
-    line-height:2;
-
-    font-size:18px;
-
-    text-align:center;
-
-    color:#555;
-
-}
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fb;
-    color:#333;
-}
-
-.hero{
-
-    background:linear-gradient(135deg,#0B5ED7,#1CA7EC);
-
-    color:white;
-
-    text-align:center;
-
-    padding:80px 20px;
-
-}
-
-.hero h1{
-
-    font-size:48px;
-
-    margin-bottom:15px;
-
-}
-
-.hero h2{
-
-    font-size:26px;
-
-    font-weight:normal;
-
-    margin-bottom:20px;
-
-}
-
-.hero p{
-
-    max-width:850px;
-
-    margin:auto;
-
-    line-height:1.8;
-
-    font-size:18px;
-
-}
-
-.container{
-
-    width:90%;
-
-    max-width:1100px;
-
-    margin:auto;
-
-}
 .checklist{
+
     padding:80px 20px;
+
     background:#f4f7fb;
+
 }
 
 .checklist h2{
+
     text-align:center;
-    font-size:36px;
+
     color:#0B5ED7;
+
+    font-size:36px;
+
     margin-bottom:15px;
+
 }
 
 .subtitle{
+
     text-align:center;
+
     color:#666;
-    margin-bottom:50px;
+
+    margin-bottom:45px;
+
     font-size:18px;
+
 }
 
-.card-container{
+.cards{
+
     display:flex;
-    justify-content:center;
-    gap:30px;
+
     flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
 }
 
 .card{
 
-    background:#fff;
+    background:white;
 
     width:320px;
 
-    padding:30px;
-
     border-radius:18px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    padding:30px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 
     transition:.3s;
 
@@ -155,7 +79,7 @@ body{
 
 .icon{
 
-    font-size:50px;
+    font-size:55px;
 
     margin-bottom:20px;
 
@@ -179,7 +103,7 @@ body{
 
 }
 
-.button{
+.btn{
 
     display:inline-block;
 
@@ -187,7 +111,7 @@ body{
 
     color:white;
 
-    padding:12px 22px;
+    padding:12px 25px;
 
     border-radius:8px;
 
@@ -197,72 +121,93 @@ body{
 
 }
 
-.button:hover{
+.btn:hover{
 
-    background:#18b087;
+    background:#17A589;
 
 }
-</style>
-    .cta{
+/* ===========================
+   RESET
+=========================== */
 
-    background:#0B5ED7;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#0B5ED7,#1CA7EC);
 
     color:white;
 
     text-align:center;
 
-    padding:80px 20px;
+    padding:90px 20px;
 
 }
 
-.cta h2{
+.hero h1{
 
-    font-size:38px;
+    font-size:48px;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
-.cta p{
+.hero h2{
 
-    max-width:800px;
+    font-size:24px;
+
+    font-weight:normal;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:850px;
 
     margin:auto;
 
-    line-height:1.9;
-
-    margin-bottom:35px;
-
-}
-
-.cta-button{
-
-    display:inline-block;
-
-    background:#20C997;
-
-    color:white;
-
-    padding:15px 35px;
-
-    border-radius:10px;
-
-    text-decoration:none;
-
     font-size:18px;
 
-    font-weight:bold;
-
-    transition:.3s;
+    line-height:1.9;
 
 }
 
-.cta-button:hover{
+/* ===========================
+   ABOUT
+=========================== */
 
-    background:#17a589;
-
-}
-.why{
+.about{
 
     background:white;
 
@@ -270,82 +215,59 @@ body{
 
 }
 
-.why h2{
+.about h2{
 
     text-align:center;
 
     color:#0B5ED7;
-
-    margin-bottom:50px;
 
     font-size:36px;
 
-}
-
-.why-box{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-    gap:25px;
+    margin-bottom:30px;
 
 }
 
-.why-item{
+.about p{
 
-    background:#f8f9fb;
+    max-width:900px;
 
-    border-radius:15px;
-
-    padding:30px;
+    margin:auto;
 
     text-align:center;
 
-    transition:.3s;
+    color:#555;
+
+    font-size:18px;
+
+    line-height:2;
 
 }
 
-.why-item:hover{
+</style>
 
-    transform:translateY(-8px);
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-.why-icon{
-
-    font-size:50px;
-
-    margin-bottom:20px;
-
-}
-
-.why-item h3{
-
-    color:#0B5ED7;
-
-    margin-bottom:15px;
-
-}
-
-.why-item p{
-
-    line-height:1.8;
-
-    color:#666;
-
-}
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
+
+<div class="container">
 
 <h1>🏥 UPDATE AKREDITASI</h1>
 
-<h2>Nurul Fithriati</h2>
+<h2>
+Nurul Fithriati
+</h2>
+
+<p>
+
+SE, CPMA, CICP, CPFI
+
+</p>
+
+<br>
 
 <p>
 
@@ -353,146 +275,112 @@ Informasi terbaru, panduan, checklist, dokumen, dan materi pendukung akreditasi 
 
 </p>
 
+</div>
+
 </section>
+
+<!-- ABOUT -->
+
 <section class="about">
 
-    <div class="container">
+<div class="container">
 
-        <h2>Selamat Datang di Update Akreditasi</h2>
+<h2>
 
-        <p>
+Selamat Datang di Update Akreditasi
 
-Website ini merupakan pusat informasi akreditasi yang menyediakan checklist telusur, panduan, dokumen pendukung, dan materi persiapan survei akreditasi. Website ini dirancang untuk membantu Direksi, Kepala Bidang, Kepala Instalasi, Kepala Ruangan, dan Kepala Unit dalam mempersiapkan akreditasi secara sistematis, terdokumentasi, dan berkelanjutan.
+</h2>
 
-        </p>
+<p>
 
-    </div>
+Website ini merupakan pusat informasi yang menyediakan checklist telusur, panduan, dokumen, fokus pertanyaan surveyor, serta berbagai materi pendukung akreditasi rumah sakit. Website ini dirancang untuk membantu Direksi, Kepala Bidang, Kepala Instalasi, Kepala Ruangan, Kepala Unit, serta seluruh tim akreditasi dalam mempersiapkan survei secara sistematis, terdokumentasi, dan berkelanjutan.
+
+</p>
+
+</div>
 
 </section>
+<!-- CHECKLIST TELUSUR -->
+
 <section class="checklist">
 
-    <div class="container">
+<div class="container">
 
-        <h2>📋 Checklist Telusur</h2>
+<h2>📋 Checklist Telusur</h2>
 
-        <p class="subtitle">
-            Pilih jabatan untuk melihat checklist persiapan menghadapi survei akreditasi.
-        </p>
+<p class="subtitle">
 
-        <div class="card-container">
+Pilih jabatan yang akan dipersiapkan untuk menghadapi survei akreditasi.
 
-            <div class="card">
+</p>
 
-                <div class="icon">👔</div>
+<div class="cards">
 
-                <h3>Kepala Bidang</h3>
+<div class="card">
 
-                <p>
-                    Checklist dokumen, fokus telusur surveyor, dan temuan yang sering ditemukan.
-                </p>
+<div class="icon">👔</div>
 
-                <a href="kepala-bidang.html" class="button">
-                    📂 Buka Checklist
-                </a>
+<h3>Kepala Bidang</h3>
 
-            </div>
+<p>
 
-            <div class="card">
+Checklist dokumen, fokus pertanyaan surveyor, dan temuan yang sering ditemukan.
 
-                <div class="icon">🏥</div>
+</p>
 
-                <h3>Kepala Instalasi / Ruangan</h3>
+<a href="kepala-bidang.html" class="btn">
 
-                <p>
-                    Checklist dokumen, fokus telusur surveyor, dan temuan yang sering ditemukan.
-                </p>
+📂 Buka Checklist
 
-                <a href="kepala-instalasi.html" class="button">
-                    📂 Buka Checklist
-                </a>
+</a>
 
-            </div>
+</div>
 
-            <div class="card">
+<div class="card">
 
-                <div class="icon">📁</div>
+<div class="icon">🏥</div>
 
-                <h3>Kepala Unit</h3>
+<h3>Kepala Instalasi / Kepala Ruangan</h3>
 
-                <p>
-                    Checklist dokumen, fokus telusur surveyor, dan temuan yang sering ditemukan.
-                </p>
+<p>
 
-                <a href="kepala-unit.html" class="button">
-                    📂 Buka Checklist
-                </a>
+Checklist dokumen, fokus pertanyaan surveyor, dan temuan yang sering ditemukan.
 
-            </div>
+</p>
 
-        </div>
+<a href="kepala-instalasi.html" class="btn">
 
-    </div>
+📂 Buka Checklist
 
-</section>
-    <section class="why">
+</a>
 
-    <div class="container">
+</div>
 
-        <h2>Mengapa Menggunakan Website Ini?</h2>
+<div class="card">
 
-        <div class="why-box">
+<div class="icon">📁</div>
 
-            <div class="why-item">
-                <div class="why-icon">📄</div>
-                <h3>Dokumen Lengkap</h3>
-                <p>Memudahkan pencarian regulasi, pedoman, SPO, dan dokumen pendukung akreditasi.</p>
-            </div>
+<h3>Kepala Unit</h3>
 
-            <div class="why-item">
-                <div class="why-icon">🎯</div>
-                <h3>Fokus Telusur</h3>
-                <p>Berisi fokus pertanyaan surveyor beserta bukti implementasi yang harus disiapkan.</p>
-            </div>
+<p>
 
-            <div class="why-item">
-                <div class="why-icon">⚠️</div>
-                <h3>Temuan yang Sering</h3>
-                <p>Membantu unit mengantisipasi temuan yang paling sering muncul saat survei.</p>
-            </div>
+Checklist dokumen, fokus pertanyaan surveyor, dan temuan yang sering ditemukan.
 
-            <div class="why-item">
-                <div class="why-icon">📋</div>
-                <h3>Checklist Praktis</h3>
-                <p>Checklist sederhana yang dapat digunakan sebelum simulasi maupun survei akreditasi.</p>
-            </div>
+</p>
 
-        </div>
+<a href="kepala-unit.html" class="btn">
 
-    </div>
+📂 Buka Checklist
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
-    <section class="cta">
-
-    <div class="container">
-
-        <h2>Siap Menghadapi Survei Akreditasi?</h2>
-
-        <p>
-
-Gunakan checklist telusur untuk memastikan setiap dokumen, implementasi, dan bukti telah dipersiapkan dengan baik sebelum survei akreditasi dilaksanakan.
-
-        </p>
-
-        <a href="kepala-bidang.html" class="cta-button">
-            📂 Mulai Checklist
-        </a>
-
-    </div>
-
-</section>
-</body>
-
-</html>
 </body>
 
 </html>
